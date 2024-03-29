@@ -42,11 +42,8 @@
 
 | Role | Description | Tests |
 | --- | --- | --- |
-| [proxyservices.cloudfare.dns](https://github.com/mto79/ansible_collection_mto79.cloudfare/blob/main/README.md) | Ansible role for managing DNS by cloudfare. |  |
+| [proxyservices.aws.dns](https://github.com/mto79/ansible_collection_mto79.aws/blob/main/README.md) | Ansible role for managing DNS by AWS Route53. |  |
 
-Click on the role to see the README for that role.
-
-This collection makes use of the [Ansible Role Template repository](https://gitlab.proxy.nl/mst/ansible.letsencrypt/ansible_role_%74emplate.git). The `add-role.sh` script downloads this Template and generates a new role with the name specified. If a `molecule/default/molecule.yml` file is present, it will be ran with GitLab Pipelines.
 
 Usage:
 
