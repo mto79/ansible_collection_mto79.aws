@@ -1,0 +1,16 @@
+---
+- name: "Setup | DNS | Manage DNS record at Route53"
+  delegate_to: "localhost"
+  community.aws.route53:
+    state: "{{ dns.state}}"
+    zone: "{{ dns.zone }}"
+    record: "{{ dns.record }}"
+    type: "{{ dns.type }}"
+    ttl: "{{ dns.ttl }}"
+    value: "\"{{ dns.value }}\""
+    wait: yes
+    aws_access_key: "{{ dns.access_key }}"
+    aws_secret_key: "{{ dns.secret_key }}"
+
+
+...
